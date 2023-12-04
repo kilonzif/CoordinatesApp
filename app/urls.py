@@ -1,8 +1,10 @@
 from django.urls import path
-
-from .views import TrilaterationView
+from .views import getData, postData
 
 urlpatterns = [
-    path('trilateration/', TrilaterationView.as_view(), name='trilateration_api'),
+    path('', getData),
+    path('post/', postData),
 
 ]
+
+
